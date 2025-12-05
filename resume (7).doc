@@ -1,0 +1,13 @@
+<div id="resumeOutput" class="resume tpl-modern">
+        <div class="r-name" id="rName">THOKO SINDISWA</div>
+        <div id="rTitle" style="color:#555;">software engineering · kzn</div>
+
+        <div class="section-title">Profile</div>
+        <div id="rProfile">Recent Advanced Diploma graduate with a strong foundation in Data Analysis, Programming, and Statistics. Proficient in Python, SQL, C#, JavaScript, HTML, and Kotlin for data manipulation, visualization, and application development. Experienced in Microsoft Office Suite (especially Excel for data analysis). A fast learner eager to contribute technical skills to drive data-driven decision-making and business growth while developing under mentorship in the ICT sector.</div>
+
+        <div class="section-title">Skills</div>
+        <ul id="rSkills"><li>Good communication skills  Team work skills and collaboration  Time management skills  Problem solving and analytical thinking  Can work under pressure  Ability to meet deadline  Adaptability and willingness to learn</li></ul>
+
+        <div class="section-title">Experience</div>
+        <ul id="rExp"></ul>
+      </div>
