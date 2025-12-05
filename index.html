@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder - Templates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons in Modern/Creative -->
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Template Selector</h1>
+        <p>Select a template and customize. Preview updates in real-time.</p>
+        
+        <!-- User Input Form (for dynamic content) -->
+        <form id="user-form">
+            <label>Name: <input type="text" id="name" placeholder="John Doe"></label>
+            <label>Email: <input type="email" id="email" placeholder="john@example.com"></label>
+            <label>Phone: <input type="tel" id="phone" placeholder="+123456789"></label>
+            <label>Summary: <textarea id="summary" placeholder="Professional summary..."></textarea></label>
+            <label>Experience: <textarea id="experience" placeholder="Job title - Company\n- Bullet point 1\n- Bullet point 2"></textarea></label>
+            <label>Education: <textarea id="education" placeholder="Degree - Institution\nYear"></textarea></label>
+            <label>Skills: <input type="text" id="skills" placeholder="Skill1, Skill2, Skill3"></label>
+            <!-- Add more fields as needed (e.g., for job role/industry suggestions) -->
+            <button type="button" onclick="saveData()">Save to Local Storage</button>
+        </form>
+        
+        <!-- Template Selector -->
+        <select id="template-select" onchange="renderTemplate()">
+            <option value="classic">Classic Template</option>
+            <option value="modern">Modern Template</option>
+            <option value="creative">Creative Template</option>
+        </select>
+        
+        <!-- Preview Area -->
+        <div id="preview" class="resume-preview"></div>
+        
+        <!-- Export Buttons -->
+        <button onclick="exportToHTML()">Export HTML</button>
+        <button onclick="exportToPDF()">Export PDF (Requires jsPDF)</button>
+        <!-- Add DOCX export similarly -->
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- Optional: Add jsPDF for PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
